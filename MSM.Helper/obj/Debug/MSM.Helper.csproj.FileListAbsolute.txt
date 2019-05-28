@@ -1,0 +1,10 @@
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\bin\Debug\MSM.Helper.dll
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\bin\Debug\MSM.Helper.pdb
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\obj\Debug\MSM.Helper.csprojAssemblyReference.cache
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\obj\Debug\MSM.Helper.csproj.CoreCompileInputs.cache
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\obj\Debug\MSM.Helper.dll
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\obj\Debug\MSM.Helper.pdb
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\bin\Debug\AutoMapper.dll
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\bin\Debug\AutoMapper.pdb
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\bin\Debug\AutoMapper.xml
+D:\Users\uagirbas\source\repos\MSM\MSM.Helper\obj\Debug\MSM.Helper.csproj.CopyComplete

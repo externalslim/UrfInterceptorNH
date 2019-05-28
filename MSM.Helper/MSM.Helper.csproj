@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19B7DC39-AADF-43FC-A43E-DB9AAE703943}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSM.Helper</RootNamespace>
+    <AssemblyName>MSM.Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.1.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.1.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dtos\Base\BaseEntity.cs" />
+    <Compile Include="Dtos\DataPool\DataPoolDto.cs" />
+    <Compile Include="Dtos\DataPool\DataPoolInput.cs" />
+    <Compile Include="Dtos\DataPool\DataPoolOutput.cs" />
+    <Compile Include="Dtos\FromListGroup\FromListGroupDto.cs" />
+    <Compile Include="Dtos\FromListGroup\FromListGroupInput.cs" />
+    <Compile Include="Dtos\FromListGroup\FromListGroupOutput.cs" />
+    <Compile Include="Dtos\MailTemplateGroup\MailTemplateGroupDto.cs" />
+    <Compile Include="Dtos\MailTemplateGroup\MailTemplateGroupInput.cs" />
+    <Compile Include="Dtos\MailTemplateGroup\MailTemplateGroupOutput.cs" />
+    <Compile Include="Dtos\MailTemplateSchema\MailTemplateSchemaDto.cs" />
+    <Compile Include="Dtos\MailTemplateSchema\MailTemplateSchemaInput.cs" />
+    <Compile Include="Dtos\MailTemplateSchema\MailTemplateSchemaOutput.cs" />
+    <Compile Include="Dtos\MailTemplate\MailTemplateDto.cs" />
+    <Compile Include="Dtos\MailTemplate\MailTemplateInput.cs" />
+    <Compile Include="Dtos\MailTemplate\MailTemplateOutput.cs" />
+    <Compile Include="Dtos\Person\PersonDto.cs" />
+    <Compile Include="Dtos\Person\PersonInput.cs" />
+    <Compile Include="Dtos\Person\PersonOutput.cs" />
+    <Compile Include="Dtos\Project\ProjectDto.cs" />
+    <Compile Include="Dtos\Project\ProjectInput.cs" />
+    <Compile Include="Dtos\Project\ProjectOutput.cs" />
+    <Compile Include="Dtos\Role\RoleDto.cs" />
+    <Compile Include="Dtos\Role\RoleInput.cs" />
+    <Compile Include="Dtos\Role\RoleOutput.cs" />
+    <Compile Include="Dtos\SenderJob\SenderJobDto.cs" />
+    <Compile Include="Dtos\SenderJob\SenderJobInput.cs" />
+    <Compile Include="Dtos\SenderJob\SenderJobOutput.cs" />
+    <Compile Include="Dtos\SendList\SendListDto.cs" />
+    <Compile Include="Dtos\SendList\SendListInput.cs" />
+    <Compile Include="Dtos\SendList\SendListOutput.cs" />
+    <Compile Include="Dtos\SMSTemplateGroup\SMSTemplateGroupDto.cs" />
+    <Compile Include="Dtos\SMSTemplateGroup\SMSTemplateGroupInput.cs" />
+    <Compile Include="Dtos\SMSTemplateGroup\SMSTemplateGroupOutput.cs" />
+    <Compile Include="Dtos\SMSTemplateSchema\SMSTemplateSchemaDto.cs" />
+    <Compile Include="Dtos\SMSTemplateSchema\SMSTemplateSchemaInput.cs" />
+    <Compile Include="Dtos\SMSTemplateSchema\SMSTemplateSchemaOutput.cs" />
+    <Compile Include="Dtos\SMSTemplate\SMSTemplateDto.cs" />
+    <Compile Include="Dtos\SMSTemplate\SMSTemplateInput.cs" />
+    <Compile Include="Dtos\SMSTemplate\SMSTemplateOutput.cs" />
+    <Compile Include="Dtos\User\UserDto.cs" />
+    <Compile Include="Dtos\User\UserInput.cs" />
+    <Compile Include="Dtos\User\UserOutput.cs" />
+    <Compile Include="Mapping\DtoMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MSM.Data\MSM.Data.csproj">
+      <Project>{74199c52-d123-4a0a-82e2-1ece7411a4f2}</Project>
+      <Name>MSM.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
